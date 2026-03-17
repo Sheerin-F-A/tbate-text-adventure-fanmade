@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Arc</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific styling for the arc list to make it scrollable */
+        .arc-list {
+            height: 250px;
+            overflow-y: auto;
+            width: 80%;
+            text-align: left;
+            border: 4px dashed var(--dialog-mauve);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .arc-link {
+            display: block;
+            color: var(--border-dark);
+            text-decoration: none;
+            font-size: 9px;
+            margin: 15px 0;
+            padding-bottom: 5px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .arc-link:hover:not(.locked) {
+            color: var(--dialog-mauve);
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="console-frame">
+        <div class="screen">
+            <div class="menu-container">
+                <h2 style="color: var(--border-dark); font-size: 14px;">SELECT MEMORY ARC</h2>
+
+                <div class="arc-list">
+                    <a href="arc1_early_years.html" class="arc-link">ARC 01: The King's Rebirth</a>
+                    <a href="#" class="arc-link locked">ARC 02: Bandits & The Dragon</a>
+                    <a href="#" class="arc-link locked">ARC 03: Elshire Forest</a>
+                    <a href="#" class="arc-link locked">ARC 04: The Adventurer</a>
+                    <a href="#" class="arc-link locked">ARC 05: Xyrus Academy</a>
+                    <a href="#" class="arc-link locked">ARC 06: The Widow's Crypt</a>
+                    <a href="#" class="arc-link locked">ARC 07: War Approaches</a>
+                    <a href="#" class="arc-link locked">ARC 08: The Alacryan Threat</a>
+                    <a href="#" class="arc-link locked">ARC 09: Retribution</a>
+                    <a href="#" class="arc-link locked">ARC 10: The Horizon</a>
+                </div>
+
+                <a href="index.html" class="menu-btn" style="padding: 10px; font-size: 8px;">BACK TO TITLE</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
