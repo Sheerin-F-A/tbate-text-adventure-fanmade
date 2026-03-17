@@ -50,7 +50,8 @@ body {
     padding: 2px;
 
     /* FIX: Increased height from 400px to 500px to give everything room to breathe */
-    height: 500px;
+    height: 550px;
+    /* Bumped up slightly */
 
     display: flex;
     flex-direction: column;
@@ -109,6 +110,8 @@ body {
 /* Game View Specifics */
 .visual-area {
     flex-grow: 1;
+    min-height: 0;
+    /* Add this! It stops the image from pushing the box down */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,6 +122,8 @@ body {
 }
 
 .dialog-box {
+    flex-shrink: 0;
+    /* Add this! It tells the browser NEVER to crush this box */
     background-color: var(--dialog-mauve);
     border: 4px solid var(--text-light);
     box-shadow: 0 0 0 4px var(--dialog-mauve), 0 0 0 8px var(--text-light);
