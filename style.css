@@ -48,12 +48,14 @@ body {
     border: 15px solid var(--border-dark);
     border-radius: 5px 5px 25px 5px;
     padding: 2px;
-    height: 400px;
+
+    /* FIX: Increased height from 400px to 500px to give everything room to breathe */
+    height: 500px;
+
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    /* CRT scanline effect customized for warm colors */
     background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(43, 27, 61, 0.08) 2px, rgba(43, 27, 61, 0.08) 4px);
 }
 
@@ -122,10 +124,16 @@ body {
     box-shadow: 0 0 0 4px var(--dialog-mauve), 0 0 0 8px var(--text-light);
     margin: 12px;
     padding: 15px;
-    height: 140px;
+
+    /* FIX: Switched from a fixed height to auto, so it stretches down if the text or buttons need more room */
+    height: auto;
+    min-height: 140px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
+    /* Added a gap to keep text and buttons slightly separated */
 }
 
 .story-text {
